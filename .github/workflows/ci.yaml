@@ -1,0 +1,14 @@
+name: CI
+on:
+  pull_request:
+    branches: [ main ]
+jobs:
+  check-application:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Lint
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14.x
+      - run: npm run lint
