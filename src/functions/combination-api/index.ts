@@ -13,7 +13,7 @@ export const handler = async (event: APIGatewayProxyEvent): Promise<any> => {
       return formatJSONResponse({
         statusCode: 400,
         data: {
-          message: 'Missing `currency` query parameter',
+          message: 'Missing `currency` query parameter!!!',
           path: event.path
         }
       })
