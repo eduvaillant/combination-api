@@ -9,7 +9,7 @@ const serverlessConfiguration: AWS = {
   provider: {
     name: 'aws',
     runtime: 'nodejs14.x',
-    profile: 'serverless-user',
+    profile: 'github-serverless-user',
     region: 'us-east-1',
     memorySize: 128,
     apiGateway: {
