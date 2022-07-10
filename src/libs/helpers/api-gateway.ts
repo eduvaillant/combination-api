@@ -1,6 +1,4 @@
-type params = { statusCode?: number, data?: any }
-
-export const formatJSONResponse = ({ statusCode = 200, data }: params): any => {
+export const formatJSONResponse = ({ statusCode, data }: { statusCode: number, data?: any }): any => {
   return {
     statusCode,
     body: JSON.stringify(data),
